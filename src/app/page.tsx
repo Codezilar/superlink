@@ -19,6 +19,7 @@ export default function Home() {
             <a href="#">About Us</a>
             <a href="#">News</a>
           </nav>
+          <div className={styles.systemTag}>VECTOR OS</div>
         </header>
 
         <div className={styles.gridArea}>
@@ -42,8 +43,19 @@ export default function Home() {
           </aside>
 
           <section className={styles.centerPanel}>
+            <div className={styles.topSockets}>
+              <span />
+              <span />
+              <span />
+            </div>
             <div className={styles.topMarks}>
               <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
+            <div className={styles.ventStack}>
               <span />
               <span />
               <span />
@@ -61,10 +73,16 @@ export default function Home() {
             </article>
 
             <div className={styles.coreBase} />
+            <div className={styles.bottomDock} />
             <button className={styles.ghostAction}>GET EARLY ACCESS</button>
           </section>
 
           <aside className={styles.rightPanel}>
+            <div className={styles.rightSockets}>
+              <span />
+              <span />
+              <span />
+            </div>
             {rightCards.map((item, i) => (
               <article key={`${item}-${i}`} className={styles.dbCard}>
                 <div className={styles.dbTop}>
@@ -80,6 +98,7 @@ export default function Home() {
             ))}
 
             <div className={styles.rightGhost} />
+            <div className={styles.rightFooter} />
           </aside>
         </div>
       </main>
